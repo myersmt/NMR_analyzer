@@ -19,7 +19,8 @@ import data_funcs_new_temp as f
 print_csvs = False
 
 # Directory where all the csv files are located
-direct = r'D:\Documents\UW-Madison\CourseWork\Summer\Lab\Paper\NMR'
+# Replace '_________' with the directory path
+direct = r'________________________________________________________________'
 if direct is not None:
     os.chdir(direct)
 else:
@@ -40,9 +41,6 @@ if print_csvs:
     f.print_head_of_dataframes(dataframes)
 
 # Plotting CSV files
-# f.plot_dataframes(dataframes, file_name="GLYCERIN90_T1.CSV")
-# f.plot_dataframes(dataframes, file_name="GLYCERIN90_T2.CSV")
-# f.plot_dataframes(dataframes, file_name="MINERAL_T2.CSV")
-# f.plot_dataframes(dataframes, file_name="GLYRCERIN100_T2.CSV")
-# f.plot_dataframes(dataframes, file_name="MINERL_T1.CSV")
+# Note: if you want to just print one csv file put file_name as parameter
+#   ex: f.plot_dataframes(dataframes, file_name="GLYCERIN90_T1.CSV")
 f.plot_dataframes(dataframes)
